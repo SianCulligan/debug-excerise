@@ -17,6 +17,7 @@ var dailyWarn = document.getElementById('dailyWarning');
 var todoWarn = document.getElementById('todoWarning');
 
 
+
 //Need a task object; should use a constructor
 function Task(taskName, taskDescript, taskType, dueDate, pointValue) {
   this.name = taskName;
@@ -45,7 +46,7 @@ function loadCurrentPoints(){
     currentPoints = parseInt(JSON.parse(tempPoints));
   }
   else{
-    currentPoints = 0;
+   currentPoints = 0;
   }
 }
 loadCurrentPoints();

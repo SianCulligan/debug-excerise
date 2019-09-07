@@ -11,6 +11,7 @@ var closeDaily = document.getElementsByClassName('close')[0];
 
 // When the user clicks on the button, open the modal
 dailyButton.onclick = function(event) {
+    event.preventDefault();
   dailyModal.style.display = 'block';
 };
 

@@ -45,7 +45,7 @@ function loadCurrentPoints(){
     currentPoints = parseInt(JSON.parse(tempPoints));
   }
   else{
-    currentPoints = 0;
+   var currentPoints = 0;
   }
 }
 loadCurrentPoints();
@@ -298,7 +298,7 @@ function checkboxHandler() {
       if (Task.allTasks[i].completionState === 'open') {
         Task.allTasks[i].completionState = 'complete';
         loadCurrentPoints();
-        currentPoints += Task.allTasks[i].value;
+         currentPoints += Task.allTasks[i].value;
         saveCurrentPoints();
         changePoints.innerHTML = currentPoints.toString() + ' points';
         localStorage.setItem('tasks', JSON.stringify(Task.allTasks));
